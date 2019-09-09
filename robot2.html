@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
+	
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/custom.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Sidebar template</title>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<meta name="robots" content="noindex">
+<link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+<link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+<link rel="canonical" href="https://codepen.io/enwaara/pen/dRqJMv?depth=everything&order=popularity&page=78&q=shop&show_forks=false" />
+<style class="cp-pen-styles">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	font-weight: 300;
+	;
+}
+*:focus {
+	outline: none;
+}
+#wrapper {
+	position: absolute;
+	margin-top: 20px;
+	left: 0;
+	width: 100%;
+}
+#container {
+	width: 990px;
+	height: 700px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	background: #dadfe1;
+	background: -moz-linear-gradient(45deg, #dadfe1 0%, #e8edef 30%, #f9feff 100%);
+	background: -webkit-linear-gradient(45deg, #dadfe1 0%, #e8edef 30%, #f9feff 100%);
+	background: linear-gradient(45deg, #dadfe1 0%, #e8edef 30%, #f9feff 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadfe1', endColorstr='#f9feff', GradientType=1 );
+}
+#img-wrap {
+	width: 550px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+#img-wrap .images {
+	width: 100%;
+	overflow: hidden;
+	margin: 270px auto 0 auto;
+}
+#img-wrap .images li {
+	list-style: none;
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.7;
+}
+#img-wrap .images li img {
+	width: 80%;
+}
+#img-wrap .images li:nth-child(4) {
+	padding-top: 10px;
+}
+#img-wrap .images li:hover {
+	opacity: 1;
+}
+#img-wrap .images .big-img {
+	width: 75%;
+	float: none;
+	padding: 0;
+	margin: 0 10%;
+	text-align: center;
+	opacity: 1;
+	position: absolute;
+	top: -90px;
+	left: 0;
+}
+#img-wrap .images .big-img img {
+	-webkit-filter: drop-shadow(0px 7px 3px #6C7A89);
+	filter: drop-shadow(0px 7px 3px #6C7A89);
+}
+.colors {
+	width: 125px;
+	margin: 20px auto;
+}
+.colors li {
+	width: 25px;
+	height: 25px;
+	margin-right: 25px;
+	list-style: none;
+	float: left;
+	background: #F3C9BF;
+	cursor: pointer;
+	position: relative;
+	position: relative;
+	opacity: 0.7;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.colors li:nth-child(2) {
+	background: #87E8C6;
+}
+.colors li:nth-child(3) {
+	margin-right: 0;
+	background: #BFE6EC;
+}
+.colors li:hover, .colors li.target {
+	opacity: 1;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.info {
+	width: 440px;
+	height: 100%;
+	float: right;
+	padding: 50px 50px 50px 0;
+ background: url(Images/logo demo.png)no-repeat;
+	background-position: 80% 0%;
+	background-size: 65%;
+}
+.info h1 {
+	font-size: 1.5em;
+	font-weight: 400;
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.info h2 {
+	font-size: 1em;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding: 5px 0 20px 0;
+	float: left;
+	color: #8199A3;
+}
+.info p {
+	clear: both;
+	margin-bottom: 7px;
+	line-height: 1.5em;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+}
+.info #pricing, .info #coloring {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.9em;
+	color: #235F83;
+}
+.info #price {
+	margin-top: 15px;
+	float: none;
+}
+.important {
+	width: 50%;
+	float: left;
+	margin-top: 15px;
+}
+.form {
+	width: 50%;
+	float: right;
+	margin-top: 15px;
+}
+.form .color {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0 20px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: #F3C61C;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	color: #444B54;
+	cursor: pointer;
+	font-weight: 400;
+}
+.form .color:hover {
+	background: #F15A29;
+}
+button {
+	width: 100%;
+	margin-top: 30px;
+	border: none;
+	background: #235F83;
+	padding: 20px 0;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	letter-spacing: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	color: #F2F2F2;
+	cursor: pointer;
+}
+button:hover {
+	background: #F3C61C;
+}
+
+@media screen and (max-width: 1440px) {
+#wrapper {
+	transform: scale(0.7);
+}
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container"> <a class="navbar-brand" href="#"><img src="Images/logo demo.png" style="width: 150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="mobile_nav">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+      </ul>
+      <ul class="navbar-nav navbar-light">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dmenu dropdown"> <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shops </a>
+          <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="shop.html">Robots</a> <a class="dropdown-item" href="shop art toys.html">Art toys</a> <a class="dropdown-item" href="shop figures.html">Figures</a> </div>
+        </li>
+        <!--========--> 
+        
+        <!--=========-->
+        <li class="nav-item"><a class="nav-link" href="shop figures 1.html">News</a></li>
+        <li class="nav-item dmenu dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+          <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="contact.html">Software Development</a> <a class="dropdown-item" href="#">Web Designing & Development</a> <a class="dropdown-item" href="#">Mobile Application</a> <a class="dropdown-item" href="#">Business Solutions & Business Process</a> <a class="dropdown-item" href="#">Digital Marketing & SEO Services</a> <a class="dropdown-item" href="#">Web Hosting & Maintenance</a> <a class="dropdown-item" href="#">Cyber Security</a> <a class="dropdown-item" href="#">Block Chain Implementation</a> <a class="dropdown-item" href="#">Big Data</a> </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="loginsignup.html">Log in</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">My bag</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <br><br><br>
+  <div class="robot">
+    <div id="wrapper">
+      <div id="container">
+        <div id="img-wrap">
+          <ul class="images">
+            <li class="big-img"> <img src="Images/fig21.png" style="width: 350px"> </li>
+            <li> <a href="robot3.html"><img src="Images/11.jpg"/></a> </li>
+            <li> <a href="robot4.html"><img src="Images/12.jpg"/></a> </li>
+            <li> <a href="robot5.html"> <img src="Images/13.jpg"/></a> </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h1>Map Dunny</h1>
+          <br>
+          <br>
+          <h2>TOYZ NO.2</h2>
+          <p>The iconic Lucky Niko Cat originated from Japan and is often believed to bring good fortune to the owner. Smoko Inc., brings you a modern update to this famous cat with the introduction of Niko, the mini version of our Lucky Meow Cat Mood Light. </p>
+          <br>
+          <b>The Basics:</b>
+          <p>. Other known name, nai cha, 奶茶.</p>
+          <p>. Measures approximately 5 x 3 x 3"</p>
+          <p>. 3 x AAA batteries required (not included)</p>
+          <p>. Keeps you company at night</p>
+          <p>. 1 hour auto shut off to elongate battery life</p>
+          <div class="important">
+            <p id="pricing">Price
+            <p>
+            <h1 id="price">$ 20.00</h1>
+          </div>
+          <div class="form">
+            <p id="coloring">Choose Number</p>
+            <select class="color">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card card-outline-secondary my-4">
+      <div class="card-header"> Product Reviews </div>
+      <div class="card-body">
+        <p>The iconic Lucky Niko Cat originated from Japan and is often believed to bring good fortune to the owner. Smoko Inc., brings you a modern update to this famous cat with the introduction of Niko, the mini version of our Lucky Meow Cat Mood Light. Lucky Niko is our version of the lucky cat, as a night light with an automatic 1 hour shut off feature. Good Luck! </p>
+        <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+        <hr>
+        <p>If you are a fan of milk tea, then this just might be the light you need. Whether you are navigating through the dark, or just want a cute decor on your desk, Pearl is your best late-night companion. Comes with boba balls too!</p>
+        <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+        <hr>
+        <p>Happy little corgi show your way through the dark with these shaped lights from Smoko. Glowing light add a fun touch to any dark corners of your space.</p>
+        <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+        <hr>
+        <div class="row" style="margin-top:40px;">
+          <div class="col-md-12">
+            <div class="well well-sm">
+              <div class="text-right"> <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a> </div>
+              <div class="row" id="post-review-box" style="display:none;">
+                <div class="col-md-12">
+                  <form accept-charset="UTF-8" action="" method="post">
+                    <input id="ratings-hidden" name="rating" type="hidden">
+                    <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                    <div class="text-right">
+                      <div class="stars starrr" data-rating="0"></div>
+                      <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"> <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                      <button class="btn btn-success btn-lg" type="submit">Save</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<section class="sections random-product">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/fig11.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-dark">Taiko's revenge</a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            <div class="badge badge-danger float-right">new</div>
+                            <div class="float-left">
+                                <a href="#" class="text-danger">Limited</a>
+                                <br>
+                                <h5>20.00$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+               <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/f10.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-dark">Crying Cloud</a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            <div class="badge badge-danger float-right">new</div>
+                            <div class="float-left">
+                                <a href="#" class="text-danger">Limited</a>
+                                <br>
+                                <h5>20.00$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/f4.webp" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-dark">Punk Rabbit</a>
+                            </h5>
+                        </div>
+                        <div class="card-footer">
+                            <div class="badge badge-danger float-right">new</div>
+                            <div class="float-left">
+                                <a href="#" class="text-danger">Limited</a>
+                                <br>
+                                <h5>20.00$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--.col-->
+            </div><!--.row-->
+        </div><!--.container-->
+    </div><!--.container-fluid-->
+</section>	
+	
+  <section id="footer">
+  <div class="container">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>NEWS</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="index.html"><i class="fa fa-angle-double-right"></i>New</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Special Offers</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Personalisation Shop</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Parks Shop</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Student Discount</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>HELP</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Help & FAQs</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Delivery Information</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>International Delivery</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Returns Policy</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Size Guide</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>ABOUT US</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Store Locator</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Events & Activities</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Community</a></li>
+          <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Toy Z Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+        <ul class="list-unstyled list-inline social text-center">
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      </hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        <p class="h6">© ToyZ © ToyZ•Marvel © & ™ Lucasfilm LTD © Marvel. All Rights Reserved.</p>
+      </div>
+      </hr>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+</body>
+</html>

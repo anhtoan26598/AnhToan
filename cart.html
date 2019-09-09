@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/custom.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Sidebar template</title>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container"> <a class="navbar-brand" href="#"><img src="Images/logo demo.png" style="width: 150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="mobile_nav">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+      </ul>
+      <ul class="navbar-nav navbar-light">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item dmenu dropdown"> <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shops </a>
+          <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="shop.html">Robots</a> <a class="dropdown-item" href="shop art toys.html">Art toys</a> <a class="dropdown-item" href="shop figures.html">Figures</a> </div>
+        </li>
+        <!--========--> 
+        
+        <!--=========-->
+        <li class="nav-item"><a class="nav-link" href="shop figures 1.html">News</a></li>
+        <li class="nav-item dmenu dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Services </a>
+          <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="contact.html">Software Development</a> <a class="dropdown-item" href="#">Web Designing & Development</a> <a class="dropdown-item" href="#">Mobile Application</a> <a class="dropdown-item" href="#">Business Solutions & Business Process</a> <a class="dropdown-item" href="#">Digital Marketing & SEO Services</a> <a class="dropdown-item" href="#">Web Hosting & Maintenance</a> <a class="dropdown-item" href="#">Cyber Security</a> <a class="dropdown-item" href="#">Block Chain Implementation</a> <a class="dropdown-item" href="#">Big Data</a> </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="loginsignup.html">Log in</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">My bag</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="cart">
+  <div class="container">
+    <div class="card shopping-cart">
+      <div class="card-header bg-dark text-light"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOPPING CART
+        <div class="clearfix"></div>
+      </div>
+      <div class="card-body"> 
+        <!-- PRODUCT -->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-2 text-center"> <img class="img-responsive" src="Images/12@300x.png" alt="prewiew" width="120" > </div>
+          <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+            <h4 class="product-name"><strong>DISCO TOYZ</strong></h4>
+            <h4> <small>A robot for a funky night</small> </h4>
+          </div>
+          <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+              <h6><strong>20.00 <span class="text-muted">x</span></strong></h6>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4">
+              <div class="quantity">
+                <input type="button" value="+" class="plus">
+                <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                <input type="button" value="-" class="minus">
+              </div>
+            </div>
+            <div class="col-2 col-sm-2 col-md-2 text-right">
+              <button type="button" class="btn btn-outline-danger btn-xs"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- END PRODUCT --> 
+        <!-- PRODUCT -->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-2 text-center"> <img class="img-responsive" src="Images/52@300x.png" alt="prewiew" width="120" > </div>
+          <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+            <h4 class="product-name"><strong>TOYZ X SPIDEY</strong></h4>
+            <h4> <small>A corparation between Toyz  and Spider-man</small> </h4>
+          </div>
+          <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+              <h6><strong>20.00 <span class="text-muted">x</span></strong></h6>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4">
+              <div class="quantity">
+                <input type="button" value="+" class="plus">
+                <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                <input type="button" value="-" class="minus">
+              </div>
+            </div>
+            <div class="col-2 col-sm-2 col-md-2 text-right">
+              <button type="button" class="btn btn-outline-danger btn-xs"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- END PRODUCT --> 
+        
+      </div>
+      <div class="card-footer">
+        <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="coupon code">
+            </div>
+            <div class="col-6">
+              <input type="submit" class="btn btn-success" value="Use coupon">
+            </div>
+          </div>
+        </div>
+        <div class="pull-right" style="margin: 12px 0px 12px 15px"> <a href="check out.html" class="btn btn-success pull-right">Checkout</a>
+          <div class="pull-right" style="margin: 5px"> Total price: <b>40.00$</b> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="footer">
+  <div class="container">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>NEWS</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="index.html"><i class="fa fa-angle-double-right"></i>New</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Special Offers</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Personalisation Shop</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Parks Shop</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Student Discount</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>HELP</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Help & FAQs</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Delivery Information</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>International Delivery</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Returns Policy</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Size Guide</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>ABOUT US</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Store Locator</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Events & Activities</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Community</a></li>
+          <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Toy Z Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+        <ul class="list-unstyled list-inline social text-center">
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      </hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        <p class="h6">© ToyZ © ToyZ•Marvel © & ™ Lucasfilm LTD © Marvel. All Rights Reserved.</p>
+      </div>
+      </hr>
+    </div>
+  </div>
+</section>
+</body>
+</html>
